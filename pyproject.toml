@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dramlab"
+version = "0.1.0"
+description = "Cycle-level DRAM memory-controller simulator for studying scheduling, page policies and address mapping"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Haris Majeed Rather" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+dramlab = "dramlab.cli:main"
+
+[tool.setuptools]
+packages = ["dramlab"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["tests"]

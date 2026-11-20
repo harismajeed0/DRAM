@@ -146,7 +146,3 @@ violations.
 - [ ] Power model based on IDD currents (Micron power calculator method)
 - [ ] Plots: latency CDF, bandwidth vs. injection rate
 - [ ] Read Ramulator / DRAMSim3 trace formats and cross-check results
-
-## License
-
-MIT
